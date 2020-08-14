@@ -10,7 +10,7 @@ This template shows how to implement a **GraphQL server with JavaScript (Node.js
 ### 1. Download this template and install dependencies
 Clone this repository:
 ```
-git@github.com:kimchhickey/apollo-prisma-server-template.git
+clone git@github.com:kimchhickey/apollo-prisma-server-template.git
 ```
 Install npm dependencies
 ```
@@ -38,7 +38,7 @@ npm run start
 ### 5. Test GraphQL API
 Laucnh a browser http://localhost:4000, and query the examples below.
 ```
-// Query Example 1 : Fetch one user.
+// Query Example 1. Fetch one user
 {
   user(id: 1) {
     id
@@ -53,14 +53,14 @@ Laucnh a browser http://localhost:4000, and query the examples below.
     "user": {
       "id": "1",
       "name": "Alice",
-      "email": "alice@prisma.io"
+      "email": "alice@greenlabs.co.kr"
     }
   }
 }
 
 ```
 ```
-// Query Example 2 : Fetch all users's id and name
+// Query Example 2. Fetch all users's id and name
 {
   users {
     id

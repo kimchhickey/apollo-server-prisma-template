@@ -8,9 +8,9 @@ CREATE TABLE `User` (
 
 INSERT INTO `User` (`id`, `name`, `email`)
 VALUES
-	(1,'Alice','alice@prisma.io'),
-	(2,'Bob','bob@prisma.io'),
-	(3,'Jason','jason@prisma.io');
+	(1,'Alice','alice@greenlabs.co.kr'),
+	(2,'Bob','bob@greenlabs.co.kr'),
+	(3,'Jason','jason@greenlabs.co.kr');
 
 CREATE TABLE `Post` (
   `id` int NOT NULL AUTO_INCREMENT,
