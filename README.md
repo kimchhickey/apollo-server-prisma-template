@@ -92,3 +92,4 @@ Laucnh a browser http://localhost:4000, and query the examples below.
 - Apollo Server 
 https://www.apollographql.com/docs/apollo-server/
 - Prisma https://www.prisma.io/docs/getting-started/setup-prisma/-start-from-scratch-sql-node-mysql
+- Prisma Example Repository https://github.com/prisma/prisma-examples
