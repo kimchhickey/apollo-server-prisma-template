@@ -10,11 +10,11 @@ This template shows how to implement a **GraphQL server with JavaScript (Node.js
 ### 1. Download this template and install dependencies
 Clone this repository:
 ```
-git clone git@github.com:kimchhickey/apollo-prisma-server-template.git
+git clone git@github.com:kimchhickey/apollo-server-prisma-template.git
 ```
 Install npm dependencies
 ```
-cd apollo-prisma-server-template
+cd apollo-server-prisma-template
 npm install
 ```
 
