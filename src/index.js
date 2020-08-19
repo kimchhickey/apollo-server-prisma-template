@@ -5,8 +5,6 @@ const { createContext } = require('./context')
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  tracing: true,
-  context: createContext,
 })
 
 server.listen().then(({ url }) => {
