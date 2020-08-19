@@ -1,6 +1,6 @@
-# Apollo Server + Prisma Template
+# ReScript Apollo Server + Prisma Template
 
-This template shows how to implement a **GraphQL server with JavaScript (Node.js)** based on [Prisma Client](https://github.com/prisma/prisma2/blob/master/docs/prisma-client-js/api.md), [apollo-server](https://www.apollographql.com/docs/apollo-server/). It is based on a MySQL database.
+This template shows how to implement a **GraphQL server with [ReasonML, ReScript](https://rescript-lang.org)** based on [Prisma Client](https://github.com/prisma/prisma2/blob/master/docs/prisma-client-js/api.md), [apollo-server](https://www.apollographql.com/docs/apollo-server/). It is based on a MySQL database.
 
 ## How to use
 ### 0. Prerequisites
@@ -30,12 +30,17 @@ And import `schema.sql` file on your database.
 npx prisma generate
 ```
 
-### 4. Run Apollo Server
+### 4. Build ReScript
+```
+npm run bs-build
+```
+
+### 5. Run Apollo Server
 ```
 npm run start
 ```
 
-### 5. Test GraphQL API
+### 6. Test GraphQL API
 Laucnh a browser http://localhost:4000, and query the examples below.
 ```
 // Query Example 1. Fetch one user
