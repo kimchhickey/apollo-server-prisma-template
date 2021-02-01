@@ -1,40 +1,13 @@
-module TypeDefs = {
-  type t
+type t
+type config<'schema, 'context> = {
+  schema: 'schema,
+  context: 'context,
 }
 
-module Resolver = {
-  type t
-}
+type middlewareOptions = {app: Express.App.t}
 
-module Prisma = {
-  type t
-}
-
-type apolloConfig = {
-  typeDefs: TypeDefs.t,
-  resolvers: Resolver.t,
-  context: Prisma.t
-}
-
-type apolloInstance = {
-  url: string
-}
-
-module Server = {
-  type t
-}
-
-@bs.new @bs.module("apollo-server")
-external apolloServer: apolloConfig => Server.t = "ApolloServer"
-
-@bs.module("../db/schema")
-external typeDefs: TypeDefs.t = "typeDefs"
-
-@bs.module("../db/schema")
-external resolvers: Resolver.t = "resolvers"
-
-@bs.module("../context")
-external createContext: Prisma.t = "createContext"
+@bs.new @bs.module("apollo-server-express")
+external apolloServer: 'config => t = "ApolloServer"
 
 @bs.send
-external listen: (Server.t ,unit) => Js.Promise.t<'a> = "listen"
+external applyMiddleware: (t, middlewareOptions) => unit = "applyMiddleware"

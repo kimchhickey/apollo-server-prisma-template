@@ -58,7 +58,7 @@ Laucnh a browser http://localhost:4000, and query the examples below.
     "user": {
       "id": "1",
       "name": "Alice",
-      "email": "alice@greenlabs.co.kr"
+      "email": "alice@example.com"
     }
   }
 }

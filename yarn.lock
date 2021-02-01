@@ -529,6 +529,14 @@ body-parser@1.19.0, body-parser@^1.18.3:
     raw-body "2.4.0"
     type-is "~1.6.17"
 
+bs-express@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/bs-express/-/bs-express-1.0.2.tgz#8baa20f69cf2aa76ea0b8a1b059bf9481f53c40a"
+  integrity sha512-k2EXzZBY5InuiFDNzLnrRL/ZMO3ylf9oE4PNBVTO+EUCpxyL1w0kGj7CfP2ZUdOJyPQ47IrjT4dVbfzsaC/dLQ==
+  dependencies:
+    body-parser "^1.18.3"
+    express "^4.16.3"
+
 bs-platform@^8.4.2:
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-8.4.2.tgz#778dabd1dfb3bc95e0086c58dabae74e4ebdee8a"
@@ -701,7 +709,7 @@ eventemitter3@^3.1.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
 
-express@^4.0.0, express@^4.17.1:
+express@^4.0.0, express@^4.16.3, express@^4.17.1:
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.17.1.tgz#4491fc38605cf51f8629d39c2b5d026f98a4c134"
   integrity sha512-mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g==
